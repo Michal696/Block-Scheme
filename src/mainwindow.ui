@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1312</width>
+    <height>858</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QGraphicsView" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1312</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuS_bor">
+    <property name="title">
+     <string>Súbor</string>
+    </property>
+    <addaction name="actionNovy"/>
+    <addaction name="separator"/>
+    <addaction name="actionOtvoritSubor"/>
+    <addaction name="actionUlozitSubor"/>
+    <addaction name="separator"/>
+    <addaction name="actionUkoncit"/>
+   </widget>
+   <widget class="QMenu" name="menuBlok">
+    <property name="title">
+     <string>Bloky</string>
+    </property>
+    <widget class="QMenu" name="menuPrida">
+     <property name="title">
+      <string>Pridať</string>
+     </property>
+     <widget class="QMenu" name="menuD_ta">
+      <property name="title">
+       <string>Dáta</string>
+      </property>
+      <addaction name="actionCislo5"/>
+      <addaction name="actionCislo6"/>
+      <addaction name="actionCislo7"/>
+     </widget>
+     <widget class="QMenu" name="menuOper_cie">
+      <property name="title">
+       <string>Operácie</string>
+      </property>
+      <addaction name="actionScitanie"/>
+      <addaction name="actionOdcitanie"/>
+      <addaction name="actionNasobenie"/>
+      <addaction name="actionDelenie"/>
+      <addaction name="actionMocnina"/>
+     </widget>
+     <addaction name="menuD_ta"/>
+     <addaction name="menuOper_cie"/>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="menuPrida"/>
+    <addaction name="actionZmazat"/>
+   </widget>
+   <addaction name="menuS_bor"/>
+   <addaction name="menuBlok"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionVypocet"/>
+   <addaction name="actionKrokvypoctu"/>
+   <addaction name="actionReset_vypoctu"/>
+   <addaction name="separator"/>
+   <addaction name="actionPosun"/>
+   <addaction name="actionSpojenie"/>
+  </widget>
+  <action name="actionNovy">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Nový</string>
+   </property>
+  </action>
+  <action name="actionOtvoritSubor">
+   <property name="text">
+    <string>Otvoriť</string>
+   </property>
+  </action>
+  <action name="actionUlozitSubor">
+   <property name="text">
+    <string>Uložiť</string>
+   </property>
+  </action>
+  <action name="actionUkoncit">
+   <property name="text">
+    <string>Ukončiť</string>
+   </property>
+  </action>
+  <action name="actionPosun">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Posun</string>
+   </property>
+  </action>
+  <action name="actionSpojenie">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Spojenie</string>
+   </property>
+  </action>
+  <action name="actionVypocet">
+   <property name="text">
+    <string>Výpočet</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
+   </property>
+  </action>
+  <action name="actionKrokvypoctu">
+   <property name="text">
+    <string>Krok výpočtu</string>
+   </property>
+  </action>
+  <action name="actionCislo5">
+   <property name="text">
+    <string>Číslo 5</string>
+   </property>
+  </action>
+  <action name="actionScitanie">
+   <property name="text">
+    <string>Sčítanie</string>
+   </property>
+  </action>
+  <action name="actionOdcitanie">
+   <property name="text">
+    <string>Odčítanie</string>
+   </property>
+  </action>
+  <action name="actionNasobenie">
+   <property name="text">
+    <string>Násobenie</string>
+   </property>
+  </action>
+  <action name="actionDelenie">
+   <property name="text">
+    <string>Delenie</string>
+   </property>
+  </action>
+  <action name="actionMocnina">
+   <property name="text">
+    <string>Mocnina</string>
+   </property>
+  </action>
+  <action name="actionZmazat">
+   <property name="text">
+    <string>Zmazať</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="actionReset_vypoctu">
+   <property name="text">
+    <string>Reset výpočtu</string>
+   </property>
+  </action>
+  <action name="actionCislo6">
+   <property name="text">
+    <string>Číslo 6</string>
+   </property>
+  </action>
+  <action name="actionCislo7">
+   <property name="text">
+    <string>Číslo 7</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionUkoncit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
